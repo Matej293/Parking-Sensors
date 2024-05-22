@@ -1,0 +1,7 @@
+﻿  CarSensor.cpp
+  Main.cpp
+C:\Users\matej\Downloads\SI-project\Libraries\include\glad\glad.h(27,1): error C1189: #error:  OpenGL header already included, remove this include, glad already provides it
+  (compiling source file 'CarSensor.cpp')
+  
+  Texture.cpp
+  Generating Code...
