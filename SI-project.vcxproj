@@ -139,7 +139,6 @@
   <ItemGroup>
     <ClCompile Include="EBO.cpp" />
     <ClCompile Include="glad.c" />
-    <ClCompile Include="CarSensor.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="shaderClass.cpp" />
     <ClCompile Include="stb.cpp" />
@@ -153,18 +152,21 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="EBO.h" />
-    <ClInclude Include="CarSensor.h" />
     <ClInclude Include="shaderClass.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="VAO.h" />
     <ClInclude Include="VBO.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\car_model.png" />
-    <Image Include="middle_sensor.png" />
-    <Image Include="nearest_sensor.png" />
-    <Image Include="no_sensor.png" />
-    <Image Include="outermost_sensor.png" />
+    <Image Include="Textures\back_outermost.png" />
+    <Image Include="Textures\car_model.png" />
+    <Image Include="Textures\front_middle.png" />
+    <Image Include="Textures\front_nearest.png" />
+    <Image Include="Textures\front_off.png" />
+    <Image Include="Textures\front_outermost.png" />
+    <Image Include="Textures\rear_middle.png" />
+    <Image Include="Textures\rear_nearest.png" />
+    <Image Include="Textures\rear_off.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

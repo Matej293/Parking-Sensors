@@ -45,9 +45,6 @@
     <ClCompile Include="Texture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CarSensor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="default.vert">
@@ -73,24 +70,33 @@
     <ClInclude Include="Texture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CarSensor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\car_model.png">
+    <Image Include="Textures\front_outermost.png">
       <Filter>Resource Files\Textures</Filter>
     </Image>
-    <Image Include="middle_sensor.png">
+    <Image Include="Textures\rear_middle.png">
       <Filter>Resource Files\Textures</Filter>
     </Image>
-    <Image Include="nearest_sensor.png">
+    <Image Include="Textures\rear_nearest.png">
       <Filter>Resource Files\Textures</Filter>
     </Image>
-    <Image Include="no_sensor.png">
+    <Image Include="Textures\rear_off.png">
       <Filter>Resource Files\Textures</Filter>
     </Image>
-    <Image Include="outermost_sensor.png">
+    <Image Include="Textures\back_outermost.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\car_model.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\front_middle.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\front_nearest.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\front_off.png">
       <Filter>Resource Files\Textures</Filter>
     </Image>
   </ItemGroup>
