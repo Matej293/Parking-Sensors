@@ -3,11 +3,12 @@
 #include<GLFW/glfw3.h>
 #include<stb/stb_image.h>
 
-#include"Texture.h"
+#include"texture.h"
 #include"shaderClass.h"
 #include"VAO.h"
 #include"VBO.h"
 #include"EBO.h"
+#include"sensorControl.h"
 
 GLfloat carVertices[] =
 { //     COORDINATES     /        COLORS      /   TexCoord  //
@@ -111,6 +112,9 @@ int main()
 	// Introduce the window into the current context
 	glfwMakeContextCurrent(window);
 
+	// After creating the window and making its context current
+	initSensorControl(window);
+
 	// Load GLAD so it configures OpenGL
 	if (!gladLoadGL()) {
 		std::cerr << "Failed to initialize GLAD" << std::endl;
@@ -173,8 +177,8 @@ int main()
 		
 		RenderCar(carVAO, carTexture);
 
-		RenderFrontSensors(shader, frontSensorVAO, frontCarSensor, 0);
-		RenderBackSensors(shader, backSensorVAO, backCarSensor, 0);
+		RenderFrontSensors(shader, frontSensorVAO, frontCarSensor, frontSensorState);
+		RenderBackSensors(shader, backSensorVAO, backCarSensor, backSensorState);
 
 		// Swap the back buffer with the front buffer
 		glfwSwapBuffers(window);

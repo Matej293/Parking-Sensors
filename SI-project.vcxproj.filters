@@ -42,7 +42,10 @@
     <ClCompile Include="stb.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Texture.cpp">
+    <ClCompile Include="texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sensorControl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -67,7 +70,10 @@
     <ClInclude Include="VAO.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Texture.h">
+    <ClInclude Include="texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sensorControl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
