@@ -5,18 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F66B0A0E-9328-4789-95EE-F7D4583ADC8F}|SI-project.vcxproj|C:\\Users\\matej\\Downloads\\SI-project\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F66B0A0E-9328-4789-95EE-F7D4583ADC8F}|SI-project.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F66B0A0E-9328-4789-95EE-F7D4583ADC8F}|SI-project.vcxproj|C:\\Users\\matej\\Downloads\\SI-project\\SensorControl.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F66B0A0E-9328-4789-95EE-F7D4583ADC8F}|SI-project.vcxproj|solutionrelative:SensorControl.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F66B0A0E-9328-4789-95EE-F7D4583ADC8F}|SI-project.vcxproj|C:\\Users\\matej\\Downloads\\SI-project\\SensorControl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F66B0A0E-9328-4789-95EE-F7D4583ADC8F}|SI-project.vcxproj|solutionrelative:SensorControl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F66B0A0E-9328-4789-95EE-F7D4583ADC8F}|SI-project.vcxproj|C:\\Users\\matej\\Downloads\\SI-project\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F66B0A0E-9328-4789-95EE-F7D4583ADC8F}|SI-project.vcxproj|solutionrelative:Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,46 +24,10 @@
               "RelativeDocumentMoniker": "Main.cpp",
               "ToolTip": "C:\\Users\\matej\\Downloads\\SI-project\\Main.cpp",
               "RelativeToolTip": "Main.cpp",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAAXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFEAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-21T17:28:27.82Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "texture.cpp",
-              "DocumentMoniker": "C:\\Users\\matej\\Downloads\\SI-project\\texture.cpp",
-              "RelativeDocumentMoniker": "texture.cpp",
-              "ToolTip": "C:\\Users\\matej\\Downloads\\SI-project\\texture.cpp",
-              "RelativeToolTip": "texture.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-26T00:17:23.668Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "sensorControl.h",
-              "DocumentMoniker": "C:\\Users\\matej\\Downloads\\SI-project\\sensorControl.h",
-              "RelativeDocumentMoniker": "sensorControl.h",
-              "ToolTip": "C:\\Users\\matej\\Downloads\\SI-project\\sensorControl.h",
-              "RelativeToolTip": "sensorControl.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-26T00:15:47.015Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "sensorControl.cpp",
-              "DocumentMoniker": "C:\\Users\\matej\\Downloads\\SI-project\\sensorControl.cpp",
-              "RelativeDocumentMoniker": "sensorControl.cpp",
-              "ToolTip": "C:\\Users\\matej\\Downloads\\SI-project\\sensorControl.cpp",
-              "RelativeToolTip": "sensorControl.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-26T00:07:57.487Z"
             }
           ]
         }

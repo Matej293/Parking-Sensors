@@ -2,6 +2,7 @@
 #include<glad/glad.h>
 #include<GLFW/glfw3.h>
 #include<stb/stb_image.h>
+#include<SFML/Audio.hpp>
 
 #include"texture.h"
 #include"shaderClass.h"
@@ -9,6 +10,7 @@
 #include"VBO.h"
 #include"EBO.h"
 #include"sensorControl.h"
+#include"soundManager.h"
 
 GLfloat carVertices[] =
 { //     COORDINATES     /        COLORS      /   TexCoord  //
@@ -54,37 +56,37 @@ static void setupVAO(VAO& vao, VBO& vbo, EBO& ebo, GLfloat* vertices, size_t ver
 	ebo.Unbind();
 }
 
-static void RenderCar(VAO& VAO1, Texture car)
+static void RenderCar(VAO& VAO, Texture car)
 {
-	VAO1.Bind();
+	VAO.Bind();
 	car.Bind();
 	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 	car.Unbind();
-	VAO1.Unbind();
+	VAO.Unbind();
 }
 
-static void RenderFrontSensors(Shader& shader, VAO& VAO2, Texture frontCarSensor[], int i)
+static void RenderFrontSensors(Shader& shader, VAO& VAO, Texture frontCarSensor[], int i)
 {
 	int activeTextureSet = 0;
-	VAO2.Bind();
+	VAO.Bind();
 	glUniform1i(glGetUniformLocation(shader.ID, "activeTextureSet"), activeTextureSet);
 
 	frontCarSensor[i].Bind();
 	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 	frontCarSensor[i].Unbind();
-	VAO2.Unbind();
+	VAO.Unbind();
 }
 
-static void RenderBackSensors(Shader& shader, VAO& VAO3, Texture backCarSensor[], int i)
+static void RenderBackSensors(Shader& shader, VAO& VAO, Texture backCarSensor[], int i)
 {
 	int activeTextureSet = 1;
-	VAO3.Bind();
+	VAO.Bind();
 	glUniform1i(glGetUniformLocation(shader.ID, "activeTextureSet"), activeTextureSet);
 
 	backCarSensor[i].Bind();
 	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 	backCarSensor[i].Unbind();
-	VAO3.Unbind();
+	VAO.Unbind();
 }
 
 int main()
@@ -159,6 +161,11 @@ int main()
 		backCarSensor[i].texUnit(shader, ("backTex" + std::to_string(i)).c_str(), 5 + i);
 	};
 
+
+	SoundManager soundManager;
+	soundManager.loadSounds();
+
+
 	// Gets ID of uniform called "scale"
 	GLuint uniID = glGetUniformLocation(shader.ID, "scale");
 
@@ -179,6 +186,8 @@ int main()
 
 		RenderFrontSensors(shader, frontSensorVAO, frontCarSensor, frontSensorState);
 		RenderBackSensors(shader, backSensorVAO, backCarSensor, backSensorState);
+
+		soundManager.playSound(frontSensorState, backSensorState, 1.0f);
 
 		// Swap the back buffer with the front buffer
 		glfwSwapBuffers(window);
