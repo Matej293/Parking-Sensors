@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{F66B0A0E-9328-4789-95EE-F7D4583ADC8F}|SI-project.vcxproj|C:\\Users\\matej\\Downloads\\SI-project\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F66B0A0E-9328-4789-95EE-F7D4583ADC8F}|SI-project.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F66B0A0E-9328-4789-95EE-F7D4583ADC8F}|SI-project.vcxproj|C:\\Users\\matej\\Downloads\\SI-project\\sensorControl.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F66B0A0E-9328-4789-95EE-F7D4583ADC8F}|SI-project.vcxproj|solutionrelative:sensorControl.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 257,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "sensorControl.cpp",
+              "DocumentMoniker": "C:\\Users\\matej\\Downloads\\SI-project\\sensorControl.cpp",
+              "RelativeDocumentMoniker": "sensorControl.cpp",
+              "ToolTip": "C:\\Users\\matej\\Downloads\\SI-project\\sensorControl.cpp",
+              "RelativeToolTip": "sensorControl.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-27T03:25:38.981Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +41,7 @@
               "RelativeDocumentMoniker": "Main.cpp",
               "ToolTip": "C:\\Users\\matej\\Downloads\\SI-project\\Main.cpp",
               "RelativeToolTip": "Main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFEAAAAaAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-21T17:28:27.82Z",
               "EditorCaption": ""

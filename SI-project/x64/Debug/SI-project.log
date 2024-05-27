@@ -1,13 +1,2 @@
-﻿  EBO.cpp
-  Main.cpp
-  sensorControl.cpp
-  shaderClass.cpp
-  soundManager.cpp
-  stb.cpp
-  texture.cpp
-  VAO.cpp
-C:\Users\matej\Downloads\SI-project\VAO.cpp(12,63): warning C4244: 'argument': conversion from 'GLsizeiptr' to 'GLsizei', possible loss of data
-  VBO.cpp
-  Generating Code...
-  glad.c
+﻿  sensorControl.cpp
   SI-project.vcxproj -> C:\Users\matej\Downloads\SI-project\x64\Debug\SI-project.exe

@@ -13,9 +13,11 @@ static void keyCallback(GLFWwindow* window, int key, int scancode, int action, i
 void updateSensorState(int key) {
     if (key == GLFW_KEY_W) {
         if (frontSensorState < 3) {
-            ++frontSensorState;
-            if (backSensorState > 0) {
-                --backSensorState;  // Lower back sensor
+            if (backSensorState == 0) {
+                ++frontSensorState;
+            }
+            else {
+                --backSensorState;
             }
         }
         else {
@@ -25,9 +27,11 @@ void updateSensorState(int key) {
     }
     else if (key == GLFW_KEY_S) {
         if (backSensorState < 3) {
-            ++backSensorState;
-            if (frontSensorState > 0) {
-                --frontSensorState;  // Lower front sensor
+            if (frontSensorState == 0) {
+                ++backSensorState;
+            }
+            else {
+                --frontSensorState;
             }
         }
         else {
@@ -36,6 +40,7 @@ void updateSensorState(int key) {
         std::cout << "Back Sensor State: " << backSensorState << std::endl;
     }
 }
+
 
 void initSensorControl(GLFWwindow* window) {
     glfwSetKeyCallback(window, keyCallback);
