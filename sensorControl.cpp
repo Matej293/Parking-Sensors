@@ -23,7 +23,9 @@ void updateSensorState(int key) {
         else {
             frontSensorState = 0;
         }
+        std::cout << "W key pressed." << std::endl;
         std::cout << "Front Sensor State: " << frontSensorState << std::endl;
+        std::cout << "Back Sensor State: " << backSensorState << std::endl << std::endl;
     }
     else if (key == GLFW_KEY_S) {
         if (backSensorState < 3) {
@@ -37,7 +39,9 @@ void updateSensorState(int key) {
         else {
             backSensorState = 0;
         }
-        std::cout << "Back Sensor State: " << backSensorState << std::endl;
+        std::cout << "S key pressed." << std::endl;
+        std::cout << "Front Sensor State: " << frontSensorState << std::endl;
+        std::cout << "Back Sensor State: " << backSensorState << std::endl << std::endl;
     }
 }
 
